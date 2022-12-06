@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Conversor Mzn - US&dollar;</title>
+	
+	<style>
+		button#btn{
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		var dAgora = Number(window.prompt('Antes de mais nada. Quanto está a cotação de dólar agora?'))
+	</script>
+	
+	<h1>Conversor de Moedas de Mzn - US&dollar;</h1> 
+	<button type="button" id="btn" onclick="calcularMoeda()">Converter</button>
+	<h4 id="res">Clique no botão acima para iniciar.</h4>
+	
+	<script>
+		function calcularMoeda(){
+			var valMzn = window.document.getElementById('btn')
+			valMzn = Number(window.prompt('Quantos Mzn você tem na carteira?'))
+			var rd = window.document.getElementById('res')
+			var cont = valMzn*dAgora
+			rd.innerHTML = cont + ' USD'
+		}
+	</script>
+</body>
+
+</html>

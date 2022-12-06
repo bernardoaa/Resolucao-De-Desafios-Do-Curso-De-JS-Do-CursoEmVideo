@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Reajustar Salário</title>
+	
+	<style>
+		button#btn{
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Reajuste Salarial</h1>
+	<button type="button" id="btn" onclick="reaSalario()">Reajustar Salário</button>
+	<h4 id="res">Clique no botão acima para iniciar.</h4>
+	<div id="res2"></div>
+	
+	<script>
+		function reaSalario(){
+			var nomeFun = window.document.getElementById('btn')
+			nomeFun = window.prompt('Qual é o nome do funcionário?')
+			var sal = Number(window.prompt(`Qual é o salário de ${nomeFun}?`))
+			var valAj = Number.parseInt(window.prompt(`O salário de ${nomeFun} vai ser ajustado em qual porcentagem?`))
+			var rs = window.document.getElementById('res')
+			var rs2 = window.document.getElementById('res2')
+			rs.innerHTML = `<h1>${nomeFun} recebeu um aumento salarial!</h1>`
+			rs2.innerText = 'O salario atual era ' + sal.toLocaleString('pt-bR', {style: 'currency', currency: 'Mzn'}) + '.\n' + 'Com um aumento de ' + valAj + ', o salario vai aumentar'
+		}
+	</script>
+</body>
+
+</html>
