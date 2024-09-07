@@ -9,6 +9,7 @@ Este repositório contém as minhas soluções para os desafios propostos no cur
 
 ## Tecnologias
 * **JavaScript:** ECMAScript 6+
+* **HTML** 
 
 ## Como usar
 1. Clone este repositório: `git clone https://github.com/bernardoaa/Resolucao-De-Desafios-Do-Curso-De-JS-Do-CursoEmVideo.git`
